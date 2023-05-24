@@ -15,5 +15,9 @@ resource "aws_instance" "aaaaaaa" {
   ami                     = "ami-0a695f0d95cefc163"
   instance_type           = "t2.micro"
   user_data               = var.user_d
+  vpc_security_group_ids = ["sg-092ecf1ac36a65467"]
+  tags = {
+    Name = "is2"
+  }
   
 }
