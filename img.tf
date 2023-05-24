@@ -5,8 +5,8 @@ variable "user_d" {
               #!/bin/bash
               sudo apt-get update
               sudo apt-get install -y docker.io
-              sudo docker pull maherreramu/ag-front
-              sudo docker run -d -p 80:80 maherreramu/ag-front
+              sudo docker pull maherreramu/ag-front:1.0-beta             
+              sudo docker run -d -p 80:80 maherreramu/ag-front:1.0-beta
               EOT
 }
 
@@ -17,7 +17,7 @@ resource "aws_instance" "aaaaaaa" {
   user_data               = var.user_d
   vpc_security_group_ids = ["sg-092ecf1ac36a65467"]
   tags = {
-    Name = "yara_care_pipi"
+    Name = "yara_care_pipi_2"
   }
   
 }
