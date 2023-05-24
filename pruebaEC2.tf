@@ -1,7 +1,7 @@
 resource "aws_instance" "instance" {
   ami          = "ami-0a695f0d95cefc163"
   instance_type = "t2.micro"
-  key_name = Key_General
+  key_name = "Key_General"
   user_data = <<EOT
     #!/bin/bash
     apt-get update
