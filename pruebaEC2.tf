@@ -15,7 +15,7 @@ resource "aws_instance" "instance" {
     systemctl start docker
     docker run -d -p 80:80 --name nginx nginx
   EOT
-  vpc_security_group_ids = "sg-092ecf1ac36a65467"
+  vpc_security_group_ids = ["sg-092ecf1ac36a65467"]
   tags = {
     Name = "is2"
   }
