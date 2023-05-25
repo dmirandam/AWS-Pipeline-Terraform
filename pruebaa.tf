@@ -5,8 +5,8 @@ variable "user_d" {
               #!/bin/bash
               sudo apt-get update
               sudo apt-get install -y docker.io
-              sudo docker pull maherreramu/ag-front:1.0-beta             
-              sudo docker run -d -p 80:80 maherreramu/ag-front:1.0-beta
+              sudo docker pull nginx:latest             
+              sudo docker run -d -p 80:80 nginx:latest    
               EOT
 }
 
