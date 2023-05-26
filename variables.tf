@@ -6,3 +6,4 @@ variable "dockerhub_credentials" {
 variable "codestar_credentials" {
   type = string
 }
+
